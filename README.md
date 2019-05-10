@@ -1,1 +1,1 @@
-## This is the full sourcecode for the book, "Concurrency in Go" published by O'Reilly.For errata and more information, please refer to the book's hub at [[http://katherine.cox-buday.com/concurrency-in-go]].该项fork自https://github.com/kat-co/concurrency-in-go-src，用于学习《Go语言并发之道》.
+## This is the full sourcecode for the book, "Concurrency in Go" published by O'Reilly.For errata and more information, please refer to the book's hub at http://katherine.cox-buday.com/concurrency-in-go. 该项fork自https://github.com/kat-co/concurrency-in-go-src，用于学习《Go语言并发之道》。
