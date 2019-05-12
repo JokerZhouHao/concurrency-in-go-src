@@ -8,7 +8,7 @@
 
 ### 第4章   Go语言的并发组件
 
-**sync.WaitGroup**
+##### sync.WaitGroup
 ``` golang
 创建：var wg sync.WatiGroup
 使用：
