@@ -8,7 +8,7 @@
 
 ### 第4章   Go语言的并发组件
 
-> **sync.WaitGroup**
+**sync.WaitGroup**
 ``` golang
 创建：var wg sync.WatiGroup
 使用：
@@ -17,7 +17,7 @@
     wg.Wait() 在n次wg.Done()前，处于阻塞状态
 ```
 
-> **sync.Mutex**
+**sync.Mutex**
 ``` golang
 创建：var mu sync.Mutex
 使用：
@@ -25,7 +25,7 @@
     mu.Unlock()
 ```
 
-> **sync.RWMutex**读写锁
+**sync.RWMutex**读写锁
 ``` golang
 创建：var mu sync.RWMutex
 使用：
@@ -36,7 +36,7 @@
     mu.RUnlock()
 ```
 
-> **sync.Cond**
+**sync.Cond**
 ``` golang
 创建：cond := sync.NewCond(&sync.Mutex{})
 等待操作：
@@ -48,14 +48,14 @@
     cond.Broadcast()    // 取消所有wait 
 ```
 
-> **sync.Once**
+**sync.Once**
 ``` golang
 创建：var once sync.Once
 使用：
     once.Do(函数)   // 注意一个Once只与第一次Do调用的函数相关联，且只执行一次该函数，以后再调用Do不会执行函数，也就是说Once能保证函数只被调用一次
 ```
 
-> **sync.Pool**
+**sync.Pool**
 ``` golang
 创建：
     calcPool := &sync.Pool(
@@ -76,7 +76,7 @@
     defer calcPool.Put(mem) // 注意：使用完后Put回去，才能重复利用
 ```
 
-> **channel**
+**channel**
 
 <table>
     <tr>
@@ -155,7 +155,7 @@
     </tr>
 </table>
 
-> **select**
+**select**
 ``` golang
 // 注：在select中的选择每个case运行的概率相同
 select {
@@ -171,7 +171,7 @@ select {
 
 ```
 
-> **GOMAXPROCS**
+**GOMAXPROCS**
 ``` golang
 runtime.GOMAXPROCS(runtime.NumCPU())
 // 可以通过将GOMAXPROCS设置为较大值，使更频繁触发竞争条件
